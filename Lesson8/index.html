@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 8</title>
+    <link rel="stylesheet" href="normilise.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="main-form">
+        <legend>Information About you</legend>
+        <label
+          >Your Name<input type="text" placeholder="Name..." required
+        /></label>
+        <label
+          >Your Age<input type="number" placeholder="20..." required
+        /></label>
+        <label
+          >Your Phone Number<input
+            type="tel"
+            placeholder="+44999999999..."
+            required
+        /></label>
+        <label
+          >Your Email<input
+            type="email"
+            placeholder="Example@gmail.com..."
+            required
+        /></label>
+      </fieldset>
+      <fieldset class="main-form">
+        <label class="check-label"></label>
+        Your massage
+        <textarea required placeholder="Hello World..."></textarea>
+
+        <label class="check-container"
+          ><input class="check" type="checkbox" required /><span
+            >I take all the rules</span
+          >
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

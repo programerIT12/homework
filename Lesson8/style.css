@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  max-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-form {
+  border: none;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+legend {
+  font-weight: 700;
+  padding: 15px 15px 15px 0;
+}
+label {
+  display: block;
+}
+input,
+textarea {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding: 5px 5px 5px 10px;
+  margin: 5px 0px 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+textarea {
+  resize: vertical;
+  max-height: 100px;
+  min-height: 40px;
+}
+.check-container {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.check {
+  position: absolute;
+  appearance: none;
+  outline: none;
+}
+.check::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-left: -22px;
+}
+.check:checked::after {
+  background:
+    url("./images/check-icon.svg") no-repeat center,
+    rgb(117, 32, 197);
+}
+
+.btn {
+  border: none;
+  padding: 7px 25px;
+  background-color: rgb(117, 32, 197);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(146, 56, 230);
+  color: rgba(189, 189, 189, 0.664);
+  transition: 0.5s;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+.check:hover {
+  cursor: pointer;
+}
+.btn:active {
+  background-color: rgb(78, 11, 141);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+.check:focus-visible {
+  outline: 2px solid rgb(147, 47, 240);
+}
