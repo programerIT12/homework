@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  margin-bottom: 140px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background: url("../content/Big-decor.svg") repeat-x;
+  top: 359px;
+  width: 100%;
+  height: 48px;
+}
+
+.hero-main-text {
+  max-width: 492px;
+}
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  max-height: 700px;
+}
+
+.hero-main-text h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+.blue-text {
+  color: #3596ed;
+}
+.hero-main-text p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  margin-bottom: 159px;
+  max-width: 439px;
+}
+.hero-btn {
+  padding: 19px 32px;
+  width: 270px;
+  height: 57px;
+  background: #3596ed;
+  font-weight: 500;
+  text-transform: rgb(225 225 255 / 0.9);
+  color: #fff;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background: #006eff;
+  transition: 0.3s;
+}
+.hero-img {
+  display: flex;
+  position: relative;
+}
+.hero-img::after {
+  content: "Выбери своего тренера";
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 160px;
+  height: 86px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #535755;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #2c332f;
+}
+.last-news {
+  margin-bottom: 268px;
+}
+.middle-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+.card-news-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+.news-card {
+  max-width: 284px;
+  height: 342px;
+  border: 1px solid #d3cbd9;
+  overflow: hidden;
+}
+.card-text-area {
+  margin: 20px;
+}
+.date {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+  margin-bottom: 8px;
+}
+.card-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+  max-width: 244px;
+}
+.text-strelka {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+  position: relative;
+}
+.text-strelka:after {
+  content: "";
+  position: absolute;
+  background: url("../content/strelka.svg");
+  width: 22px;
+  height: 9px;
+  margin-left: 8px;
+  top: 6px;
+}
+.news-card:hover {
+  transform: scale(1.02);
+  transition: all, 0.3s;
+}
