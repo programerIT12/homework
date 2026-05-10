@@ -1,0 +1,41 @@
+.header {
+  margin-bottom: 80px;
+}
+.inner-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 105px;
+  border-bottom: 1px solid #d3cbd9;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+.nav-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.nav-phone p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #858e8a;
+  margin-bottom: 8px;
+}
+.nav-phone a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  transition: all 0.3s;
+}
+.nav-phone a:hover {
+  color: #3596ed;
+  cursor: pointer;
+  transform: scale(1.03);
+}
