@@ -1,0 +1,55 @@
+.footer {
+  margin-top: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(73, 169, 255, 0.2) 0%,
+    rgba(252, 124, 217, 0.2) 100%
+  );
+}
+.footer-img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 60px;
+  padding-left: 0px;
+  padding-bottom: 40px;
+  margin: 0px;
+  border-bottom: 1px solid #d3cbd9;
+}
+.footer-list-item a:hover {
+  color: #3596ed;
+  cursor: pointer;
+  transition: all, 0.3s;
+}
+.footer-list-item a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.footer-copyright {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #858e8a;
+}
+.footer-list-item:hover {
+  cursor: pointer;
+}
