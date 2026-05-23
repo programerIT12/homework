@@ -1,0 +1,45 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.page__body {
+  min-width: 375px;
+}
+.page__body--no-scroll {
+  overflow-y: hidden;
+}
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+img {
+  object-fit: cover;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.title-xl {
+  font-family: var(--second-family);
+  font-weight: 700;
+  color: var(--second-color);
+}
+
+@media (width > 768px) {
+  .title-xl {
+    font-size: 32px;
+  }
+}
+@media (width <= 768px) {
+  .title-xl {
+    font-size: 25px;
+  }
+}

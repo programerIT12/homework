@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__advertising-background">
+        <div class="container header__advertising-massage">
+          <span class="header__advertising-title">
+            Зарегестрируйтесь и получите скидку 20% на первую покупку. </span
+          ><a href="#" class="header__advertising-registration"
+            >Зарегестрироваться сейчас</a
+          >
+        </div>
+      </div>
+      <div class="container">
+        <nav class="header__menu">
+          <div class="header__menu-logo">
+            <button
+              class="header__burger burger"
+              area-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="header__menu"
+            >
+              <svg width="24px" height="24px">
+                <use
+                  class="burger__icon-menu"
+                  href="./icons/sprite.svg#burger-menu"
+                ></use>
+                <use
+                  class="burger__icon-cross"
+                  href="./icons/sprite.svg#burger-cross"
+                ></use>
+              </svg>
+            </button>
+            <span class="header__menu-name title-xl">SHOP.CO</span>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a
+                class="header__menu-item-link header__menu-item-link-mark"
+                href="#"
+                >Магазин</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#">Скидки</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#">Новые поступления</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-item-link" href="#">Бренды</a>
+            </li>
+          </ul>
+          <form class="header__menu-form">
+            <label class="header__menu-form-label"
+              ><input
+                class="header__menu-form-input"
+                type="text"
+                placeholder="Искать товары..."
+            /></label>
+          </form>
+          <div class="header__menu-icon">
+            <svg class="header__menu-icon-search" width="24" height="24">
+              <use href="./icons/sprite.svg#search"></use>
+            </svg>
+            <svg width="24" height="24">
+              <use href="./icons/sprite.svg#card"></use>
+            </svg>
+            <svg width="24" height="24">
+              <use href="./icons/sprite.svg#account"></use>
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

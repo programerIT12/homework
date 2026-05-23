@@ -1,0 +1,17 @@
+:root {
+  /* font-family */
+  --font-family: "Satoshi", sans-serif;
+  --second-family: "Integral CF", sans-serif;
+
+  /* colors */
+  --bg-color: #f0eeed;
+  --main-color: #fff;
+  --second-color: #000;
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* transition */
+  --transition-time: 0.4s;
+}
