@@ -1,0 +1,145 @@
+.hero {
+  background-color: var(--bg-color-hero);
+}
+.hero__text-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.hero__title {
+  padding-top: 106px;
+  margin-bottom: 34px;
+  min-width: 650px;
+}
+
+.hero__text {
+  margin-bottom: 32px;
+  max-width: 551px;
+}
+.hero__btn-buy {
+  border-radius: 62px;
+  padding: 15px 47px;
+  width: 210px;
+  height: 52px;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 63px;
+}
+.hero__list-avards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(3.5rem, 3.023rem + 2.04vw, 4rem);
+}
+
+.hero__list-avards-item {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+.hero__list-avards-item:last-child {
+  border: none;
+}
+
+.hero__list-avards-item-text {
+  font-family: var(--font-family);
+}
+.hero__img {
+  flex-shrink: 0;
+}
+.hero__img-picture {
+  height: 100%;
+  max-width: 100%;
+}
+
+.hero__brands {
+  background-color: var(--second-color);
+  width: 100%;
+  height: 122px;
+}
+.hero__brands-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+@media (width <= 1320px) {
+  .hero__title {
+    min-width: 0;
+  }
+}
+
+@media (width <= 1250px) {
+  .hero__list-avards {
+    justify-content: center;
+  }
+  .hero__list-avards {
+    justify-content: center;
+  }
+  .hero__text-info {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (width <= 1215px) {
+  .hero__brands {
+    height: 146px;
+  }
+  .hero__brands-wrapper {
+    justify-content: center;
+    gap: 0 106px;
+  }
+  .hero__brands-img {
+    zoom: 0.65;
+  }
+}
+
+@media (width <= 967px) {
+  .hero__wrapper {
+    flex-direction: column;
+  }
+  .hero__img-picture {
+    width: 100%;
+    height: 100%;
+  }
+  .hero__img-picture {
+    margin-bottom: -6px;
+  }
+  .hero__title {
+    padding-top: 76px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero__brands-wrapper {
+    gap: 1px 22px;
+    justify-content: center;
+  }
+  .hero__btn-buy {
+    min-width: 358px;
+  }
+  .hero__title {
+    padding-top: 40px;
+    font-size: 32px;
+    text-align: start;
+  }
+  .hero__text {
+    text-align: start;
+  }
+  .hero__list-avards-item:nth-child(2) {
+    border: none;
+  }
+}
