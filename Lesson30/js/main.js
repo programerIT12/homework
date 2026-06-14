@@ -53,19 +53,20 @@ const todoslist = document.querySelector(".todos");
 const createTodoElement = (text) => {
   const todo = document.createElement("li");
   todo.classList.add("todo");
-  todo.innerHTML = `<div class="todo-text">${text}</div>
-          <div class="todo-actions">
-            <button class="button-complete button">&#10004;</button>
-            <button class="button-delete button">&#10006;</button>
-          </div>`;
-  todoslist.append(todo);
+  todo.dataset.id = text[todoKeys.id];
+  todo.innerHTML = `<div class="todo-text">${text[todoKeys.text]}</div>
+    <div class="todo-actions">
+    <button class="button-complete button">&#10004;</button>
+    <button class="button-delete button">&#10006;</button>
+    </div>`;
+
   return todo;
 };
 
 const handleCreateTodo = (todos, text) => {
   const toDo = createTodo(todos, text);
-  const todoElement = createTodoElement(toDo[todoKeys.text]);
-  todoElement.dataset.id = toDo[todoKeys.id];
+  const todoElement = createTodoElement(toDo);
+  todoslist.append(todoElement);
 };
 
 form.addEventListener("submit", (event) => {
