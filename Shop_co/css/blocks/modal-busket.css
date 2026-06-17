@@ -1,0 +1,47 @@
+.modal-second {
+  position: fixed;
+  width: 100%;
+  height: 105vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 10;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: inherit;
+  opacity: 1;
+  transition:
+    visibility var(--transition-time),
+    opacity var(--transition-time);
+}
+.modal__window-basket {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+  gap: 40px;
+  background-color: var(--bg-color);
+  min-width: 30%;
+  padding: 100px 50px;
+  min-height: 75%;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+.modal__close-basket {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+.modal__window-header {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.close {
+  transition: all var(--transition-time);
+  visibility: hidden;
+  opacity: 0;
+}
